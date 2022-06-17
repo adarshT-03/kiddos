@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+  <?php include 'get.php'; ?>
     <header id="mu-header" class="top-header">
       <div style="background-color: #002347 !important">
         <div class="container">
@@ -444,7 +445,7 @@
       </div>
     </section>
     <style></style>
-
+  
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
@@ -465,22 +466,27 @@
             <i class="fa fa-angle-right next1"></i> -->
 
             <div class="post-wrapper">
+
+            <?php
+               if(!empty($row))
+               foreach($row as $rows)
+              { 
+            ?>
+
               <div class="pricing-entry pb-4 text-center course-main">
                 <div
                   class="img"
-                  style="background-image: url(images/bg_1.jpg)"
+                  style="background-image: url(<?php echo $rows['course_photo']; ?>)"
                 ></div>
                 <div class="px-4">
                   <div class="course-title">
-                    <p>Enginerring</p>
+                    <p><?php echo $rows['course_category']; ?></p>
                   </div>
                   <div class="course-subtitle">
-                    <p>JEE (Main + Advanced)</p>
+                    <p><?php echo $rows['course_title']; ?></p>
                   </div>
                   <p class="px-4-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
+                  <?php echo $rows['course_desc']; ?>
                   </p>
                 </div>
                 <p class="button text-center">
@@ -489,6 +495,7 @@
                   >
                 </p>
               </div>
+              <?php } ?>
 
               <div class="pricing-entry pb-4 text-center course-main">
                 <div
@@ -571,6 +578,7 @@
         </div>
       </div>
     </section>
+  
 
 
     <section class="ftco-section">
@@ -578,7 +586,7 @@
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
             <h2 class="mb-4" style="color: #fda638">
-              <span style="color: #002347 !important">Our</span> Courses
+              <span style="color: #002347 !important">Our</span> Faculty
             </h2>
             <p>
               Separated they live in. A small river named Duden flows by their
@@ -592,7 +600,7 @@
             <!-- <i class="fa fa-angle-left prev1"></i>
             <i class="fa fa-angle-right next1"></i> -->
 
-            <div class="post-wrapper">
+            <div class="faculty-wrapper">
               <div class="staff">
                 <div class="img-wrap d-flex align-items-stretch">
                   <div
@@ -1726,7 +1734,46 @@
             // instead of a settings object
           ],
         });
+
+        $(".faculty-wrapper").slick({
+          dots: true,
+          infinite: true,
+          speed: 200,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          //         autoplay: true,
+          // autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
       });
+      
     </script>
   </body>
 </html>
