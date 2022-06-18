@@ -422,18 +422,17 @@
 
     <section
       class="ftco-intro"
-      style="background-image: url(assets/images/pexels-pixabay-356065.jpg)"
+      style="background-image: url(assets/images/12345-01.jpg)"
       data-stellar-background-ratio="0.5"
     >
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-9">
-            <h2>Teaching Your Child Some Good Manners</h2>
+            <h2>Do you have a Dream of getting into IIT?</h2>
             <p class="mb-0">
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia. It is a paradisematic country, in
-              which roasted parts of sentences fly into your mouth.
+              Take a first step towards your dream of getting into IIT with us. We will guide you in this wonderful journey.
+              Join our course.
             </p>
           </div>
           <div class="col-md-3 d-flex align-items-center">
@@ -578,6 +577,83 @@
         </div>
       </div>
     </section>
+
+    <section
+      class="ftco-section ftco-counter img"
+      id="section-counter"
+      style="
+        background-image:url(assets/images/123-01.jpg);
+      "
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+          <div
+            class="col-md-8 text-center heading-section heading-section-black ftco-animate"
+          >
+            <h2 class="mb-4" style="color:white"><span style="color:#fda638 !important">20 Years of</span> Experience</h2>
+            <p style="color:white">
+              Separated they live in. A small river named Duden flows by their
+              place and supplies it with the necessary regelialia. It is a
+              paradisematic country
+            </p>
+          </div>
+        </div>
+        <div class="row d-md-flex align-items-center justify-content-center">
+          <div class="col-lg-10">
+            <div class="row d-md-flex align-items-center">
+              <div
+                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18">
+                  <div class="icon"><span class="flaticon-doctor"></span></div>
+                  <div class="text">
+                    <strong class="number" data-number="18">0</strong>
+                    <span style="color:white">Certified Teachers</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18">
+                  <div class="icon"><span class="flaticon-doctor"></span></div>
+                  <div class="text">
+                    <strong class="number" data-number="351">0</strong>
+                    <span style="color:white">Successful Kids</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18">
+                  <div class="icon"><span class="flaticon-doctor"></span></div>
+                  <div class="text">
+                    <strong class="number" data-number="564">0</strong>
+                    <span style="color:white">Happy Parents</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18">
+                  <div class="icon"><span class="flaticon-doctor"></span></div>
+                  <div class="text">
+                    <strong class="number" data-number="300">0</strong>
+                    <span style="color:white">Awards Won</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
   
 
 
@@ -769,315 +845,14 @@
       </div>
     </section>
 
-    <section class="ftco-section ftco-no-pb">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-4"><span>Certified</span> Teachers</h2>
-            <p>
-              Separated they live in. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div
-                  class="img align-self-stretch"
-                  style="background-image: url(images/teacher-1.jpg)"
-                ></div>
-              </div>
-              <div class="text pt-3 text-center">
-                <h3>Bianca Wilson</h3>
-                <span class="position mb-2">Teacher</span>
-                <div class="faded">
-                  <p>
-                    I am an ambitious workaholic, but apart from that, pretty
-                    simple person.
-                  </p>
-                  <ul class="ftco-social text-center">
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-twitter"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-facebook"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-google-plus"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-instagram"></span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div
-                  class="img align-self-stretch"
-                  style="background-image: url(images/teacher-2.jpg)"
-                ></div>
-              </div>
-              <div class="text pt-3 text-center">
-                <h3>Mitch Parker</h3>
-                <span class="position mb-2">English Teacher</span>
-                <div class="faded">
-                  <p>
-                    I am an ambitious workaholic, but apart from that, pretty
-                    simple person.
-                  </p>
-                  <ul class="ftco-social text-center">
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-twitter"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-facebook"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-google-plus"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-instagram"></span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div
-                  class="img align-self-stretch"
-                  style="background-image: url(images/teacher-3.jpg)"
-                ></div>
-              </div>
-              <div class="text pt-3 text-center">
-                <h3>Stella Smith</h3>
-                <span class="position mb-2">Art Teacher</span>
-                <div class="faded">
-                  <p>
-                    I am an ambitious workaholic, but apart from that, pretty
-                    simple person.
-                  </p>
-                  <ul class="ftco-social text-center">
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-twitter"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-facebook"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-google-plus"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-instagram"></span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div
-                  class="img align-self-stretch"
-                  style="background-image: url(images/teacher-4.jpg)"
-                ></div>
-              </div>
-              <div class="text pt-3 text-center">
-                <h3>Monshe Henderson</h3>
-                <span class="position mb-2">Science Teacher</span>
-                <div class="faded">
-                  <p>
-                    I am an ambitious workaholic, but apart from that, pretty
-                    simple person.
-                  </p>
-                  <ul class="ftco-social text-center">
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-twitter"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-facebook"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-google-plus"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-instagram"></span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  
 
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-4"><span>Our</span> Courses</h2>
-            <p>
-              Separated they live in. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 course d-lg-flex ftco-animate">
-            <div
-              class="img"
-              style="background-image: url(images/course-1.jpg)"
-            ></div>
-            <div class="text bg-light p-4">
-              <h3><a href="#">Arts Lesson</a></h3>
-              <p class="subheading"><span>Class time:</span> 9:00am - 10am</p>
-              <p>
-                Separated they live in. A small river named Duden flows by their
-                place and supplies it with the necessary regelialia. It is a
-                paradisematic country
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 course d-lg-flex ftco-animate">
-            <div
-              class="img"
-              style="background-image: url(images/course-2.jpg)"
-            ></div>
-            <div class="text bg-light p-4">
-              <h3><a href="#">Language Lesson</a></h3>
-              <p class="subheading"><span>Class time:</span> 9:00am - 10am</p>
-              <p>
-                Separated they live in. A small river named Duden flows by their
-                place and supplies it with the necessary regelialia. It is a
-                paradisematic country
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 course d-lg-flex ftco-animate">
-            <div
-              class="img"
-              style="background-image: url(images/course-3.jpg)"
-            ></div>
-            <div class="text bg-light p-4">
-              <h3><a href="#">Music Lesson</a></h3>
-              <p class="subheading"><span>Class time:</span> 9:00am - 10am</p>
-              <p>
-                Separated they live in. A small river named Duden flows by their
-                place and supplies it with the necessary regelialia. It is a
-                paradisematic country
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 course d-lg-flex ftco-animate">
-            <div
-              class="img"
-              style="background-image: url(images/course-4.jpg)"
-            ></div>
-            <div class="text bg-light p-4">
-              <h3><a href="#">Sports Lesson</a></h3>
-              <p class="subheading"><span>Class time:</span> 9:00am - 10am</p>
-              <p>
-                Separated they live in. A small river named Duden flows by their
-                place and supplies it with the necessary regelialia. It is a
-                paradisematic country
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="ftco-section ftco-counter img"
-      id="section-counter"
-      style="
-        background-image: url(assets/images/education-day-arrangement-table-with-copy-space.jpg);
-      "
-      data-stellar-background-ratio="0.5"
-    >
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-2">
-          <div
-            class="col-md-8 text-center heading-section heading-section-black ftco-animate"
-          >
-            <h2 class="mb-4"><span>20 Years of</span> Experience</h2>
-            <p>
-              Separated they live in. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country
-            </p>
-          </div>
-        </div>
-        <div class="row d-md-flex align-items-center justify-content-center">
-          <div class="col-lg-10">
-            <div class="row d-md-flex align-items-center">
-              <div
-                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
-              >
-                <div class="block-18">
-                  <div class="icon"><span class="flaticon-doctor"></span></div>
-                  <div class="text">
-                    <strong class="number" data-number="18">0</strong>
-                    <span>Certified Teachers</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
-              >
-                <div class="block-18">
-                  <div class="icon"><span class="flaticon-doctor"></span></div>
-                  <div class="text">
-                    <strong class="number" data-number="351">0</strong>
-                    <span>Successful Kids</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
-              >
-                <div class="block-18">
-                  <div class="icon"><span class="flaticon-doctor"></span></div>
-                  <div class="text">
-                    <strong class="number" data-number="564">0</strong>
-                    <span>Happy Parents</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
-              >
-                <div class="block-18">
-                  <div class="icon"><span class="flaticon-doctor"></span></div>
-                  <div class="text">
-                    <strong class="number" data-number="300">0</strong>
-                    <span>Awards Won</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+   
     <section class="ftco-section testimony-section bg-light">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-4"><span>What Parents</span> Says About Us</h2>
+            <h2 class="mb-4"><span style="color:#002347" >What Students</span> Says About Us</h2>
             <p>
               Separated they live in. A small river named Duden flows by their
               place and supplies it with the necessary regelialia. It is a
@@ -1285,136 +1060,6 @@
       </div>
     </section>
 
-    <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-4"><span>Recent</span> Blog</h2>
-            <p>
-              Separated they live in. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a
-                href="blog-single.html"
-                class="block-20 d-flex align-items-end"
-                style="background-image: url('images/image_1.jpg')"
-              >
-                <div class="meta-date text-center p-2">
-                  <span class="day">27</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading">
-                  <a href="#">Skills To Develop Your Child Memory</a>
-                </h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-                <div class="d-flex align-items-center mt-4">
-                  <p class="mb-0">
-                    <a href="#" class="btn btn-secondary"
-                      >Read More
-                      <span class="ion-ios-arrow-round-forward"></span
-                    ></a>
-                  </p>
-                  <p class="ml-auto mb-0">
-                    <a href="#" class="mr-2">Admin</a>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a
-                href="blog-single.html"
-                class="block-20 d-flex align-items-end"
-                style="background-image: url('images/image_2.jpg')"
-              >
-                <div class="meta-date text-center p-2">
-                  <span class="day">27</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading">
-                  <a href="#">Skills To Develop Your Child Memory</a>
-                </h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-                <div class="d-flex align-items-center mt-4">
-                  <p class="mb-0">
-                    <a href="#" class="btn btn-secondary"
-                      >Read More
-                      <span class="ion-ios-arrow-round-forward"></span
-                    ></a>
-                  </p>
-                  <p class="ml-auto mb-0">
-                    <a href="#" class="mr-2">Admin</a>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a
-                href="blog-single.html"
-                class="block-20 d-flex align-items-end"
-                style="background-image: url('images/image_3.jpg')"
-              >
-                <div class="meta-date text-center p-2">
-                  <span class="day">27</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading">
-                  <a href="#">Skills To Develop Your Child Memory</a>
-                </h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-                <div class="d-flex align-items-center mt-4">
-                  <p class="mb-0">
-                    <a href="#" class="btn btn-secondary"
-                      >Read More
-                      <span class="ion-ios-arrow-round-forward"></span
-                    ></a>
-                  </p>
-                  <p class="ml-auto mb-0">
-                    <a href="#" class="mr-2">Admin</a>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="ftco-gallery">
       <div class="container-wrap">

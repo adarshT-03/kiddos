@@ -9451,7 +9451,7 @@ textarea.form-control {
   .ftco-counter .text strong.number {
     font-weight: 500;
     font-size: 50px;
-    color: #1eaaf1;
+    color: white;
     display: block; }
   .ftco-counter .text span {
     display: block;
@@ -9901,4 +9901,27 @@ textarea.form-control {
         min-height: 110px;
         max-height: 110px;
         overflow: hidden;
+      }
+
+
+
+      @media (max-width: 991.98px) {
+        .owl-carousel.home-slider{
+          height:400px !important
+        }
+        .owl-carousel.home-slider .slider-item{
+          height: 400px;
+        }
+      }
+      @media (max-width: 500.98px) {
+        .owl-carousel.home-slider{
+          height:300px !important
+        }
+        .owl-carousel.home-slider .slider-item{
+          height: 300px;
+        }
+      }
+
+      html,body{
+        overflow-x: hidden;
       }
