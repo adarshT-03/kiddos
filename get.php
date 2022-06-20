@@ -11,15 +11,27 @@
        exit();
     }
   
-    $sql = "select * from courses";
-    $result = ($conn->query($sql));
+    $course_data = "select * from courses";
+    $course_result = ($conn->query($course_data));
     //declare array to store the data of database
-    $row = []; 
+    $course = []; 
   
-    if ($result->num_rows > 0) 
+    if ($course_result->num_rows > 0) 
     {
         // fetch all data from db into array 
-        $row = $result->fetch_all(MYSQLI_ASSOC);  
+        $course = $course_result->fetch_all(MYSQLI_ASSOC);  
+    }   
+
+    
+    $banner_data = "select * from images";
+    $banner_result = ($conn->query($banner_data));
+    //declare array to store the data of database
+    $banner = []; 
+  
+    if ($banner_result->num_rows > 0) 
+    {
+        // fetch all data from db into array 
+        $banner = $banner_result->fetch_all(MYSQLI_ASSOC);  
     }   
 ?>
 <!--   -->

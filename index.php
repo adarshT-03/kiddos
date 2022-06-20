@@ -168,8 +168,34 @@
       </div>
     </nav>
     <!-- END nav -->
-
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+    Select Image File to Upload:
+    <input type="file" name="file">
+    <input type="submit" name="submit" value="Upload">
+</form>
     <section class="home-slider owl-carousel">
+    <?php
+               if(!empty($banner))
+               foreach($banner as $rows)
+              { 
+            ?>
+
+
+<div class="slider-item" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['image']); ?>)">
+
+        <!-- <div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
+            <h1 class="mb-4">Kids Are The Best <span>Explorers In The World</span></h1>
+            <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
+          </div>
+        </div>
+        </div> -->
+      </div>
+
+             
+              <?php } ?>
       <div class="slider-item" style="background-image: url(images/bg_1.jpg)">
         <!-- <div class="overlay"></div>
         <div class="container">
@@ -467,8 +493,8 @@
             <div class="post-wrapper">
 
             <?php
-               if(!empty($row))
-               foreach($row as $rows)
+               if(!empty($course))
+               foreach($course as $rows)
               { 
             ?>
 
