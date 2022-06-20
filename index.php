@@ -168,11 +168,7 @@
       </div>
     </nav>
     <!-- END nav -->
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-    Select Image File to Upload:
-    <input type="file" name="file">
-    <input type="submit" name="submit" value="Upload">
-</form>
+   
     <section class="home-slider owl-carousel">
     <?php
                if(!empty($banner))
