@@ -8146,7 +8146,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #1eaaf1; }
+  color: white; }
   a:hover, a:focus {
     text-decoration: none;
     color: #1eaaf1;
@@ -8775,7 +8775,7 @@ h1, h2, h3, h4, h5,
 
 .staff {
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
-    background-color: #f9f9ff;
+  background-color: #f9f9ff;
   overflow: hidden;
   margin-bottom: 30px;
   -moz-transition: all 0.3s ease;
@@ -8816,7 +8816,7 @@ h1, h2, h3, h4, h5,
     .staff .text .position {
       text-transform: uppercase;
       color: white;
-      background-color: #002752;
+      background-color: #fda638;
       display: block;
       letter-spacing: 1px;
     margin: 0 auto;
@@ -8921,7 +8921,7 @@ h1, h2, h3, h4, h5,
     font-size: 12px; }
   .pricing-entry .img {
     height: 250px;
-    background-position: top center !important; }
+   background-size: cover !important; }
   .pricing-entry .button {
     margin-bottom: 0;
     -moz-transition: all 0.3s ease;
@@ -9876,7 +9876,7 @@ textarea.form-control {
         background-color: #f9f9ff;
       }
       .course-title {
-        background-color: #002347;
+        background-color: #fda638;
         width: fit-content;
         padding-left: 15px;
         padding-right: 15px;
