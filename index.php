@@ -26,11 +26,13 @@
   <link rel="stylesheet" href="css/flaticon.css" />
   <link rel="stylesheet" href="css/icomoon.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
   <style>
     @media (max-width: 500px) {
 
       .mu-top-email .fa-envelope,
-      span {
+      .ma-em {
         font-size: 10px;
 
       }
@@ -62,7 +64,7 @@
                     <div class="mu-top-email">
                       <a href="mailto:someone@example.com">
                         <i class="fa fa-envelope"></i>
-                        <span>phasoracademy@gmail.com</span>
+                        <span class="ma-em">phasoracademy@gmail.com</span>
                       </a>
                     </div>
                     <div class="mu-top-phone">
@@ -322,16 +324,16 @@
 
   <section class="ftco-section">
     <div class="container">
-      <div class="row justify-content-center mb-5 pb-2">
+      <div class="row justify-content-center  pb-2">
         <div class="col-md-8 text-center heading-section ftco-animate">
           <h2 class="mb-4" style="color: #fda638">
             <span style="color: #002347 !important">Our</span> Courses
           </h2>
-          <p>
+          <!-- <p>
             Separated they live in. A small river named Duden flows by their
             place and supplies it with the necessary regelialia. It is a
             paradisematic country
-          </p>
+          </p> -->
         </div>
       </div>
       <div class="page-wrapper">
@@ -374,6 +376,7 @@
     </div>
   </section>
 
+<!-- <div class="elfsight-app-a974a3cb-dbf1-4753-a0c6-7f960d58c5f4"></div> -->
 
 
   <section class="ftco-section ftco-counter img" id="section-counter" style="
@@ -496,7 +499,7 @@
 
             <?php } ?>
 
-           
+
 
 
           </div>
@@ -523,28 +526,28 @@
       <div class="row ftco-animate justify-content-center">
         <div class="col-md-12">
           <div class="carousel-testimony owl-carousel">
-          <?php
+            <?php
             if (!empty($testimonial))
               foreach ($testimonial as $rows) {
             ?>
-             <div class="item">
-              <div class="testimony-wrap d-flex">
-                <div class="user-img mr-4" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['photo']); ?>)"></div>
-                <div class="text ml-2 bg-light">
-                  <span class="quote d-flex align-items-center justify-content-center">
-                    <i class="icon-quote-left"></i>
-                  </span>
-                  <p>
-                  <?php echo $rows['testimonial']; ?>
-                  </p>
-                  <p class="name"><?php echo $rows['name']; ?></p>
-                  <span class="position"><?php echo $rows['relation']; ?></span>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['photo']); ?>)"></div>
+                  <div class="text ml-2 bg-light">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>
+                      <?php echo $rows['testimonial']; ?>
+                    </p>
+                    <p class="name"><?php echo $rows['name']; ?></p>
+                    <span class="position"><?php echo $rows['relation']; ?></span>
+                  </div>
                 </div>
               </div>
-            </div>
-             <?php } ?>
-           
-            
+            <?php } ?>
+
+
           </div>
         </div>
       </div>
@@ -644,12 +647,43 @@
     </div>
   </section>
 
-  <footer class="ftco-footer ftco-bg-dark ftco-section">
+  <style>
+    .footer-anchor {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-icon {
+      height: 40px;
+      width: 40px;
+      display: flex;
+
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      color: white
+    }
+
+    .footer-text {
+      margin-bottom: 0px !important;
+      color: white !important;
+      font-size: 18px;
+      margin-left: 10px
+    }
+  </style>
+
+  <footer class="ftco-footer ftco-bg-dark ftco-section" style="background-color: #002347 !important;">
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-6 col-lg-3">
+
           <div class="ftco-footer-widget mb-5">
-            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div style="margin-bottom: 33px;">
+              <img src="assets/images/FL-01.png" style="width: 100%;" alt="#" />
+            </div>
+            <!-- <h2 class="ftco-heading-2" style="margin-top: 50px;">Have a Questions?</h2> -->
             <div class="block-23 mb-3">
               <ul>
                 <li>
@@ -668,67 +702,25 @@
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="ftco-footer-widget mb-5">
-            <h2 class="ftco-heading-2">Recent Blog</h2>
-            <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg)"></a>
-              <div class="text">
-                <h3 class="heading">
-                  <a href="#">Even the all-powerful Pointing has no control about</a>
-                </h3>
-                <div class="meta">
-                  <div>
-                    <a href="#"><span class="icon-calendar"></span> Dec 25, 2018</a>
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-person"></span> Admin</a>
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-chat"></span> 19</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="block-21 mb-5 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg)"></a>
-              <div class="text">
-                <h3 class="heading">
-                  <a href="#">Even the all-powerful Pointing has no control about</a>
-                </h3>
-                <div class="meta">
-                  <div>
-                    <a href="#"><span class="icon-calendar"></span> Dec 25, 2018</a>
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-person"></span> Admin</a>
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-chat"></span> 19</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="ftco-footer-widget mb-5 ml-md-4">
-            <h2 class="ftco-heading-2">Links</h2>
+            <h2 class="ftco-heading-2">Our Branches</h2>
             <ul class="list-unstyled">
               <li>
-                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a>
+                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Kandivali</a>
               </li>
               <li>
-                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a>
+                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Malad</a>
               </li>
               <li>
-                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Services</a>
+                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Andheri</a>
               </li>
               <li>
-                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Deparments</a>
+                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Thakur Complex</a>
               </li>
               <li>
-                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
+                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>NL College</a>
               </li>
             </ul>
+
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
@@ -741,18 +733,40 @@
               </div>
             </form>
           </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+
           <div class="ftco-footer-widget mb-5">
             <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-              <li class="ftco-animate">
-                <a href="#"><span class="icon-twitter"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="icon-facebook"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="icon-instagram"></span></a>
-              </li>
+              <div class="ftco-animate">
+                <div style="margin-bottom: 15px;">
+                  <a href="#" class="footer-anchor"><span class="icon-phone footer-icon"></span>
+                    <p class=" footer-text">+91702168402</p>
+
+                  </a>
+                </div>
+                <div style="margin-bottom: 15px;">
+                  <a href="#" class="footer-anchor"><span class="icon-mail_outline footer-icon"></span>
+                    <p class=" footer-text">phasoracademy@gmail.com</p>
+
+                  </a>
+                </div>
+                <div style="margin-bottom: 15px;">
+                  <a href="#" class="footer-anchor"><span class="icon-instagram footer-icon"></span>
+                    <p class=" footer-text">phasor_academy</p>
+
+                  </a>
+                </div>
+                <div style="margin-bottom: 15px;">
+                  <a href="#" class="footer-anchor"><span class="icon-facebook footer-icon"></span>
+                    <p class=" footer-text">Phasor Academy</p>
+
+                  </a>
+                </div>
+              </div>
+
+            
             </ul>
           </div>
         </div>
@@ -867,31 +881,13 @@
   <style>
     .enq-button {
 
-      /* border-bottom: none;
-    cursor: pointer;
-    width: 170px;
-    height: 34px;
-    overflow: hidden;
-    background: #002347;
-    color: #ffffff;
-    padding: 2px 0px 2px 0px;
-    position: fixed;
-    top: 200px;
-    right: -68px;
-    text-align: center;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    z-index: 9999999;
-    font-size: 18px; */
+
       border: none;
       position: fixed;
       background: #002347;
       color: #ffffff;
       top: 50%;
-      right: 38px;
+      right: 41px;
       z-index: 1000;
       transform: rotate(-90deg);
       transform-origin: top right;
@@ -1057,7 +1053,7 @@
         speed: 200,
         slidesToShow: 3,
         slidesToScroll: 1,
-                autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         responsive: [{
             breakpoint: 1024,
@@ -1094,7 +1090,7 @@
         speed: 200,
         slidesToShow: 4,
         slidesToScroll: 1,
-                autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         responsive: [{
             breakpoint: 1024,
