@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="css/flaticon.css" />
   <link rel="stylesheet" href="css/icomoon.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
 
   <style>
     @media (max-width: 500px) {
