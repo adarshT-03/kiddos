@@ -9874,9 +9874,14 @@ textarea.form-control {
      .course-main {
         box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
         background-color: #f9f9ff;
+        border:1px solid #203c59;
+     
+       
+        
       }
       .course-title {
         background-color: #fda638;
+       
         width: fit-content;
         padding-left: 15px;
         padding-right: 15px;

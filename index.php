@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Kiddos - Free Bootstrap 4 Template by Colorlib</title>
+  <title>Phasor Academy</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet" />
@@ -127,22 +127,22 @@
             <a href="index.html" class="nav-link pl-0">Home</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">About</a>
+            <a href="#" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="teacher.html" class="nav-link">Teacher</a>
+            <a href="#" class="nav-link">Teacher</a>
           </li>
           <li class="nav-item">
-            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="#" class="nav-link">Courses</a>
           </li>
           <li class="nav-item">
-            <a href="pricing.html" class="nav-link">Pricing</a>
+            <a href="#" class="nav-link">Pricing</a>
           </li>
           <li class="nav-item">
-            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="#" class="nav-link">Blog</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="#" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -473,11 +473,10 @@
                 </div>
                 <div class="text pt-3 text-center">
                   <h3><?php echo $rows['faculty_name']; ?></h3>
-                  <span class="position mb-2">Teacher</span>
+                  <span class="position mb-2"><?php echo $rows['faculty_cat']; ?></span>
                   <div class="faded">
                     <p>
-                      I am an ambitious workaholic, but apart from that, pretty
-                      simple person.
+                    <?php echo $rows['faculty_desc']; ?>
                     </p>
                     <ul class="ftco-social text-center">
                       <li class="ftco-animate">
@@ -779,9 +778,10 @@
             <script>
               document.write(new Date().getFullYear());
             </script>
-            All rights reserved | This template is made with
-            <i class="icon-heart" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            All right reserved with Phasor Academy
+            <!-- All rights reserved | This template is made with -->
+            <!-- <i class="icon-heart" aria-hidden="true"></i> by
+            <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
         </div>
@@ -1018,9 +1018,14 @@
 
     @media (min-width: 576px) {
       .modal-dialog {
-        max-width: 325px !important;
+        max-width: 400px !important;
         margin: 1.75rem auto;
       }
+      @media (max-width: 576px) {
+      .modal-dialog {
+        max-width: 300px !important;
+        margin: 1.75rem auto;
+      }}
     }
   </style>
   <script>
