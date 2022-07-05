@@ -308,7 +308,8 @@
         <div class="col-md-9">
           <h2>Do you have a Dream of getting into IIT?</h2>
           <p class="mb-0">
-            Take a first step towards your dream of getting into IIT with us. We will guide you in this wonderful journey.
+            Take a first step towards your dream of getting into IIT with us. We will guide you in this
+            wonderful journey.
             Join our course.
           </p>
         </div>
@@ -349,7 +350,8 @@
             ?>
 
               <div class="pricing-entry pb-4 text-center course-main">
-                <div class="img" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['course_photo']); ?>)"></div>
+                <div class="img" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['course_photo']); ?>)">
+                </div>
                 <div class="px-4">
                   <div class="course-title">
                     <p><?php echo $rows['course_category']; ?></p>
@@ -376,7 +378,7 @@
     </div>
   </section>
 
-<!-- <div class="elfsight-app-a974a3cb-dbf1-4753-a0c6-7f960d58c5f4"></div> -->
+  <!-- <div class="elfsight-app-a974a3cb-dbf1-4753-a0c6-7f960d58c5f4"></div> -->
 
 
   <section class="ftco-section ftco-counter img" id="section-counter" style="
@@ -385,7 +387,8 @@
     <div class="container">
       <div class="row justify-content-center mb-5 pb-2">
         <div class="col-md-8 text-center heading-section heading-section-black ftco-animate">
-          <h2 class="mb-4" style="color:white"><span style="color:#fda638 !important">20 Years of</span> Experience</h2>
+          <h2 class="mb-4" style="color:white"><span style="color:#fda638 !important">20 Years of</span>
+            Experience</h2>
           <p style="color:white">
             Separated they live in. A small river named Duden flows by their
             place and supplies it with the necessary regelialia. It is a
@@ -469,14 +472,15 @@
             ?>
               <div class="staff">
                 <div class="img-wrap d-flex align-items-stretch">
-                  <div class="img align-self-stretch" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['faculty_profile']); ?>)"></div>
+                  <div class="img align-self-stretch" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['faculty_profile']); ?>)">
+                  </div>
                 </div>
                 <div class="text pt-3 text-center">
                   <h3><?php echo $rows['faculty_name']; ?></h3>
                   <span class="position mb-2"><?php echo $rows['faculty_cat']; ?></span>
                   <div class="faded">
                     <p>
-                    <?php echo $rows['faculty_desc']; ?>
+                      <?php echo $rows['faculty_desc']; ?>
                     </p>
                     <ul class="ftco-social text-center">
                       <li class="ftco-animate">
@@ -507,6 +511,44 @@
     </div>
   </section>
 
+  <section class="ftco-section testimony-section bg-dark">
+    <div class="container">
+      <!-- <div class="row justify-content-center mb-5 pb-2">
+        <div class="col-md-8 text-center heading-section ftco-animate">
+          <h2 class="mb-4"><span style="color:#002347">What Students</span> Says About Us</h2>
+          <p>
+            Separated they live in. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia. It is a
+            paradisematic country
+          </p>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-md-4 ftco-animate ">
+          <p class="video-text">Listen</p>
+          <p class="video-text">from our </p>
+          <p class="video-text">future</p>
+          <p class="video-text">Doctors & </p>
+          <p class="video-text">Engineers</p>
+
+        </div>
+        <div class="col-md-8 ftco-animate">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    .video-text {
+      margin: 0px;
+      font-size: 70px;
+      color: white;
+      font-weight: bolder;
+      line-height: 90px;
+    }
+  </style>
+
 
 
 
@@ -531,7 +573,8 @@
             ?>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['photo']); ?>)"></div>
+                  <div class="user-img mr-4" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['photo']); ?>)">
+                  </div>
                   <div class="text ml-2 bg-light">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
@@ -609,6 +652,59 @@
     </div>
   </section>
 
+  <section class="ftco-section testimony-section bg-light">
+    <div class="container">
+
+      <div class="row justify-content-center  pb-2">
+        <div class="col-md-8 text-center heading-section ftco-animate">
+          <h2 class="mb-4" style="color: #fda638">
+            <span style="color: #002347 !important">Integrated</span> With
+          </h2>
+
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="postslider">
+          <div class="partners">
+            <div class="partners-div">
+              <img src="assets/download__17_-removebg-preview.png" />
+            </div>
+            <div class="partners-div">
+              <img src="assets/download__6_-removebg-preview (1).png" />
+            </div>
+            <div class="partners-div">
+              <img src="assets/download__8_-removebg-preview (1).png" />
+            </div>
+            <div class="partners-div">
+              <img src="assets/download__9_-removebg-preview.png" />
+            </div>
+            <div class="partners-div">
+              <img src="assets/images__1_-removebg-preview.png" />
+            </div>
+            <div class="partners-div">
+              <img src="assets/download__17_-removebg-preview.png" />
+            </div>
+            <div class="partners-div">
+              <img src="assets/download__6_-removebg-preview (1).png" />
+            </div>
+            <div class="partners-div">
+              <img src="assets/download__8_-removebg-preview (1).png" />
+            </div>
+            <div class="partners-div">
+              <img src="assets/download__9_-removebg-preview.png" />
+            </div>
+            <div class="partners-div">
+              <img src="assets/images__1_-removebg-preview.png" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
   <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
 
   <section class="ftco-gallery">
@@ -645,6 +741,20 @@
       </div>
     </div>
   </section>
+
+  
+  <style>
+    .partners-div {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+    }
+
+    .partners-div img {
+      object-fit: contain;
+    }
+  </style>
 
   <style>
     .footer-anchor {
@@ -686,11 +796,13 @@
             <div class="block-23 mb-3">
               <ul>
                 <li>
-                  <span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California,
+                  <span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain
+                    View, San Francisco, California,
                     USA</span>
                 </li>
                 <li>
-                  <a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a>
+                  <a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929
+                      210</span></a>
                 </li>
                 <li>
                   <a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a>
@@ -765,7 +877,7 @@
                 </div>
               </div>
 
-            
+
             </ul>
           </div>
         </div>
@@ -825,7 +937,8 @@
           <h4 class="getin-text">
             Book Your Own Slot!!!!
           </h4>
-          <p style="margin-bottom:0px !important ;font: size 12px;">We are giving 100% free carrier counselling.</p>
+          <p style="margin-bottom:0px !important ;font: size 12px;">We are giving 100% free carrier
+            counselling.</p>
         </div>
 
 
@@ -1021,11 +1134,13 @@
         max-width: 400px !important;
         margin: 1.75rem auto;
       }
+
       @media (max-width: 576px) {
-      .modal-dialog {
-        max-width: 300px !important;
-        margin: 1.75rem auto;
-      }}
+        .modal-dialog {
+          max-width: 300px !important;
+          margin: 1.75rem auto;
+        }
+      }
     }
   </style>
   <script>
@@ -1046,7 +1161,8 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+  </script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
@@ -1060,6 +1176,43 @@
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+
+      $(".partners").slick({
+        dots: false,
+        infinite: true,
+        speed: 200,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
         responsive: [{
             breakpoint: 1024,
             settings: {
