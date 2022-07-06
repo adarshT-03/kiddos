@@ -9869,7 +9869,20 @@ textarea.form-control {
 
 
 
+    @media (max-width: 500px) {
 
+      .mu-top-email .fa-envelope,
+      .ma-em {
+          font-size: 10px;
+
+      }
+
+      .email-div {
+          padding-right: 0px !important;
+      }
+
+
+  }
     /* //coursers */
      .course-main {
         box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
