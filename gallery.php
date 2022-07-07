@@ -47,13 +47,15 @@
             overflow-x: initial !important;
         }
 
-
-
-
+        body {
+            background-color: #f5f5f5;
+        }
 
         .column {
             float: left;
-            width: 33%;
+            width: 32%;
+            margin: 7px;
+            overflow: hidden;
         }
 
         /* The Modal (background) */
@@ -61,13 +63,13 @@
             display: none;
             position: fixed;
             z-index: 900;
-            padding-top: 100px;
+
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.85);
         }
 
         /* Modal Content */
@@ -88,6 +90,7 @@
             right: 25px;
             font-size: 35px;
             font-weight: bold;
+            text-shadow: none !important;
         }
 
         .close:hover,
@@ -112,9 +115,10 @@
             position: absolute;
             top: 50%;
             width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
+            padding: 8px;
+
+            background-color: black;
+            color: white !important;
             font-weight: bold;
             font-size: 20px;
             transition: 0.6s ease;
@@ -130,10 +134,7 @@
         }
 
         /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
+
 
         /* Number text (1/3 etc) */
         .numbertext {
@@ -167,6 +168,7 @@
         img.hover-shadow {
             transition: 0.3s;
             height: 350px;
+            object-fit: cover;
         }
 
         .hover-shadow:hover {
@@ -177,22 +179,29 @@
         @media (max-width: 800px) {
 
             .column {
-                width: 50% !important;
+                width: 47% !important;
             }
+
             .hover-shadow:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            transform: scale(1);
-        }
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                transform: scale(1);
+            }
         }
 
         @media (max-width: 500px) {
             .hover-shadow:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            transform: scale(1);
-        }
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                transform: scale(1);
+            }
 
             .column {
                 width: 100% !important;
+            }
+
+            .prev,
+            .next {
+                padding: 4px;
+                font-size: 10px;
             }
         }
     </style>
@@ -201,7 +210,8 @@
 
 <body>
     <?php include 'header.php'; ?>
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');">
+    <?php include 'get.php'; ?>
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('assets/images/College-students.jpg');background-position: 57% 30%;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -213,37 +223,18 @@
         </div>
     </section>
 
-
-
-
-
-   
     <div class="container">
         <div class="row">
-            <div class="column">
-                <img src="assets/images/result1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-            </div>
-            <div class="column">
-                <img src="assets/images/result2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-            </div>
-            <div class="column">
-                <img src="assets/images/result3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-            </div>
-            <div class="column">
-                <img src="assets/images/result4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-            </div>
-            <div class="column">
-                <img src="assets/images/result1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-            </div>
-            <div class="column">
-                <img src="assets/images/result2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-            </div>
-            <div class="column">
-                <img src="assets/images/result3.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-            </div>
-            <div class="column">
-                <img src="assets/images/result4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-            </div>
+            <?php
+            if (!empty($gallery))
+                foreach ($gallery as $rows) {
+            ?>
+                <div class="column">
+                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['image']); ?>" style="width:100%" onclick="openModal();currentSlide(<?php echo $rows['id']; ?>)" class="hover-shadow cursor">
+                </div>
+
+            <?php } ?>
+
         </div>
     </div>
 
@@ -252,52 +243,33 @@
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
 
-            <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
-                <img src="assets/images/result1.jpg" style="width:100%">
-            </div>
+            <?php
+            if (!empty($gallery))
+                foreach ($gallery as $rows) {
+            ?>
+                <div class="mySlides">
 
-            <div class="mySlides">
-                <div class="numbertext">2 / 4</div>
-                <img src="assets/images/result2.jpg" style="width:100%">
-            </div>
+                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['image']); ?>" style="width:100%">
+                </div>
 
-            <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <img src="assets/images/result3.jpg" style="width:100%">
-            </div>
+            <?php } ?>
 
-            <div class="mySlides">
-                <div class="numbertext">4 / 4</div>
-                <img src="assets/images/result4.jpg" style="width:100%">
-            </div>
+
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
 
 
-            <!-- <div class="column">
-                <img class="demo cursor" src="assets/images/result1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="assets/images/result1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="assets/images/result1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="assets/images/result1.jpg"style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-            </div> -->
+
+
         </div>
     </div>
+    <?php include 'footer.php'; ?>
 
     <script>
         function openModal() {
-            document.getElementById("myModal").style.display = "block";
+            document.getElementById("myModal").style.display = "flex";
         }
 
         function closeModal() {
@@ -337,6 +309,7 @@
             captionText.innerHTML = dots[slideIndex - 1].alt;
         }
     </script>
+
 
 
 

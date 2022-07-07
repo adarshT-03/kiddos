@@ -83,7 +83,7 @@
             <div class="collapse navbar-collapse" id="ftco-nav" style="height: 60px">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a href="index.html" class="nav-link pl-0">Home</a>
+                        <a href="index.php" class="nav-link pl-0">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">About</a>
@@ -95,7 +95,7 @@
                         <a href="gallery.php" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Pricing</a>
+                        <a href="result.php" class="nav-link">Result</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Blog</a>
