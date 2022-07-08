@@ -56,6 +56,7 @@
             width: 32%;
             margin: 7px;
             overflow: hidden;
+            box-shadow: 0 8px 26px 0 rgb(0 0 0 / 16%) !important;
         }
 
         /* The Modal (background) */
@@ -224,7 +225,7 @@
     </section>
 
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin-top: 30px;margin-Bottom:30px">
             <?php
             if (!empty($gallery))
                 foreach ($gallery as $rows) {

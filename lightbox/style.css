@@ -1,0 +1,145 @@
+
+.glightbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 0 8px 26px 0 rgb(0 0 0 / 16%) !important;
+}
+
+/* .gallery_product{
+    margin: 0 5px 5px 5px;
+} */
+.gallery_product{
+    /* overflow: hidden; */
+}
+/* .glightbox img{
+    box-shadow: 0 8px 26px 0 rgb(0 0 0 / 16%) !important;
+} */
+
+/* 
+.glightbox img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+    
+} */
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #002347;
+    border-radius: 5px;
+    text-align: center;
+    color: #002347;
+    margin:0 5px 15px 5px;
+    
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #002347;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #002347;
+
+}
+.filter-button.active
+{
+    background-color: #002347;
+    color: white;
+}
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+	-webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.block{
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@media (max-width: 768px) {
+    .glightbox-container .ginner-container{
+        width:auto !important;
+    }
+    .glightbox-clean .gnext{
+        top:50%  !important;
+        right:1px ;
+        color: white !important;
+      
+    }
+    .glightbox-clean .gprev{
+        top:50%  !important;
+      color:white !important
+      
+    }
+    .glightbox-clean .gclose{
+       
+      color:white !important
+      
+    }
+
+    .goverlay{
+        background: rgba(0, 0, 0, .92) !important;
+    }
+  }
+
+  @media (min-width:780px){
+    .gnext{
+        font-size: 30px ;
+        padding: 30px;
+    }
+    .gprev{
+        font-size: 30px ;
+        padding: 30px;
+
+    }
+    .gclose{
+        font-size: 50px !important ;
+
+    }
+
+  }
+.gallery{
+    height: auto  !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
