@@ -63,6 +63,17 @@ if ($gallery_result->num_rows > 0) {
     // fetch all data from db into array 
     $gallery = $gallery_result->fetch_all(MYSQLI_ASSOC);
 }
+
+
+$result_data = "select * from results";
+$rseult_ = ($conn->query($result_data));
+//declare array to store the data of database
+$result = [];
+
+if ($rseult_->num_rows > 0) {
+    // fetch all data from db into array 
+    $result = $rseult_->fetch_all(MYSQLI_ASSOC);
+}
 ?>
 
 

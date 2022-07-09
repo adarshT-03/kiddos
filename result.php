@@ -36,7 +36,8 @@
 
 <body>
   <?php include 'header.php'; ?>
-
+  <?php include 'get.php'; ?>
+ 
   <section class="hero-wrap hero-wrap-2" style="background-image: url('assets/images/College-students.jpg');background-position: 57% 30%;">
     <div class="overlay"></div>
     <div class="container">
@@ -63,11 +64,24 @@
           <button class="btn btn-default filter-button" id="Civil" onclick="call(this.id)">Civil Services</button>
         </div>
       </div>
+    
+      <?php
+      if (!empty($result))
+        foreach ($result as $rows) {
+      ?>
+        <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['result_photo']); ?>" class="glightbox gallery_product  col-lg-4 col-md-6 col-sm-12 col-xs-12 filter JEE">
+
+      <?php } ?>
+
+
 
 
       <a href="assets/download__17_-removebg-preview.png" class="glightbox gallery_product  col-lg-4 col-md-6 col-sm-12 col-xs-12 filter JEE">
         <img src="assets/download__17_-removebg-preview.png">
       </a>
+
+      <img src="assets/download__17_-removebg-preview.png" class="glightbox gallery_product  col-lg-4 col-md-6 col-sm-12 col-xs-12 filter JEE">
+      
       <a href="assets/download__6_-removebg-preview (1).png" class="glightbox gallery_product  col-lg-4 col-md-6 col-sm-12 col-xs-12 filter NEET">
         <img src="assets/download__6_-removebg-preview (1).png">
       </a>
