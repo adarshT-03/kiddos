@@ -5880,7 +5880,8 @@ button.bg-dark:focus {
 
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
-  align-self: stretch !important; }
+  align-self: stretch !important;
+ }
 
 @media (min-width: 576px) {
   .flex-sm-row {
@@ -9550,7 +9551,10 @@ textarea.form-control {
 
 .contact-section .box {
   width: 100%;
-  display: block; }
+  display: block; 
+  box-shadow: 0 8px 26px 0 rgb(0 0 0 / 16%) !important;
+  background-color: white !important;
+}
   .contact-section .box h3 {
     font-size: 24px;
     font-weight: 500; }
@@ -9922,6 +9926,20 @@ textarea.form-control {
       }
 
 
+      @media (max-width: 500px) {
+
+        .mu-top-email .fa-envelope,
+        .ma-em {
+            font-size: 10px;
+
+        }
+
+        .email-div {
+            padding-right: 0px !important;
+        }
+
+
+    }
 
       @media (max-width: 991.98px) {
         .owl-carousel.home-slider{
@@ -9940,9 +9958,11 @@ textarea.form-control {
         }
       }
 
-      html,body{
-        overflow-x: hidden;
-      }
+
 
       /* footer */
-    
+
+      .owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
+        -ms-touch-action: pan-y !important;
+        touch-action: pan-y !important;
+    }

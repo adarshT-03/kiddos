@@ -1,16 +1,5 @@
+<?php include './get_data/config.php'; ?>
 <?php
-
-
-// connect the database with the server
-// $conn = new mysqli("208.91.198.197:3306", "Phasor", "admin@12345!", "Phasor");
-
-$conn = new mysqli("162.214.80.31", "idgvhtmy_admin", "#Lz*(+oaExW%", "idgvhtmy_phasor");
-// if error occurs 
-if ($conn->connect_errno) {
-    echo "Failed to connect to MySQL: " . $conn->connect_error;
-    exit();
-}
-
 $course_data = "select * from courses";
 $course_result = ($conn->query($course_data));
 //declare array to store the data of database
@@ -53,46 +42,7 @@ if ($testimonial_result->num_rows > 0) {
     // fetch all data from db into array 
     $testimonial = $testimonial_result->fetch_all(MYSQLI_ASSOC);
 }
-
-
-$gallery_data = "select * from gallery";
-$gallery_result = ($conn->query($gallery_data));
-//declare array to store the data of database
-$gallery = [];
-
-if ($gallery_result->num_rows > 0) {
-    // fetch all data from db into array 
-    $gallery = $gallery_result->fetch_all(MYSQLI_ASSOC);
-}
-
-
-$result_data = "select * from images2";
-$rseult_ = ($conn->query($result_data));
-//declare array to store the data of database
-$result = [];
-
-if ($rseult_->num_rows > 0) {
-    // fetch all data from db into array 
-    $result = $rseult_->fetch_all(MYSQLI_ASSOC);
-}
-
-
-$branch_data = "select * from branches";
-$barnch_ = ($conn->query($branch_data));
-//declare array to store the data of database
-$branch = [];
-
-if ($barnch_->num_rows > 0) {
-    // fetch all data from db into array 
-    $branch = $barnch_->fetch_all(MYSQLI_ASSOC);
-}
-
 ?>
-
-
-
-
-
 <?php
 mysqli_close($conn);
 ?>

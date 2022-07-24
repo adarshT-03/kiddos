@@ -86,10 +86,10 @@
                         <a href="index.php" class="nav-link pl-0">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="about.php" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Teacher</a>
+                        <a href="teacher.php" class="nav-link">Teacher</a>
                     </li>
                     <li class="nav-item">
                         <a href="gallery.php" class="nav-link">Gallery</a>
@@ -98,10 +98,10 @@
                         <a href="result.php" class="nav-link">Result</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Blog</a>
+                        <a href="tesimonial.php" class="nav-link">Testimonial</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="contact.php" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>

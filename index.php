@@ -8,8 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
@@ -27,41 +26,48 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
-
     <style>
-    @media (max-width: 500px) {
-
-        .mu-top-email .fa-envelope,
-        .ma-em {
-            font-size: 10px;
-
+        html,
+        body {
+            overflow-x: hidden !important;
         }
-
-        .email-div {
-            padding-right: 0px !important;
-        }
-
-
-    }
     </style>
+
+    <!-- <style>
+        @media (max-width: 500px) {
+
+            .mu-top-email .fa-envelope,
+            .ma-em {
+                font-size: 10px;
+
+            }
+
+            .email-div {
+                padding-right: 0px !important;
+            }
+
+
+        }
+    </style> -->
 </head>
 
 <body>
-    <?php include 'get.php'; ?>
+    <?php include './get_data/index_data.php'; ?>
     <?php include 'header.php'; ?>
+
 
 
 
 
     <section class="home-slider owl-carousel">
         <?php
-    if (!empty($banner))
-      foreach ($banner as $rows) {
-    ?>
-        <div class="slider-item"
-            style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['banner']); ?>)">
-        </div>
+        if (!empty($banner))
+            foreach ($banner as $rows) {
+        ?>
+            <div class="slider-item" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['banner']); ?>)">
+            </div>
 
         <?php } ?>
 
@@ -85,8 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-tertiary"
-                    style="background-color: #fda638 !important">
+                <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-tertiary" style="background-color: #fda638 !important">
                     <div class="media block-6 d-block text-center">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="flaticon-reading"></span>
@@ -114,8 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate"
-                    style="background-color: #fda638 !important">
+                <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate" style="background-color: #fda638 !important">
                     <div class="media block-6 d-block text-center">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="flaticon-diploma"></span>
@@ -140,18 +144,13 @@
                     <div class="text px-4 ftco-animate">
                         <h2 class="mb-4">Welcome to Phasor Academy</h2>
 
-                        <!-- <div class="col-md-6 welcome-img-div"> -->
 
-                        <img src="assets/images/vikash-jha.jpg" alt="#" style="height: 100%; width: 100%" />
-                        <!-- </div> -->
 
-                        <!-- <p>
-                <a href="#" class="btn btn-secondary px-4 py-3">Read More</a>
-              </p> -->
+                        <img loading="lazy" src="assets/images/vikash-jha.jpg" alt="#" style="height: 100%; width: 100%" />
+
                     </div>
                 </div>
-                <div class="col-md-6 wrap-about py-5 pr-md-4 ftco-animate bg-light"
-                    style="display: flex; justify-content: center; align-items: center">
+                <div class="col-md-6 wrap-about py-5 pr-md-4 ftco-animate bg-light" style="display: flex; justify-content: center; align-items: center">
                     <div class="col-md-12 welcome-img-div">
                         <div class="full" style="text-align: justify">
                             <p style="color: black">
@@ -162,8 +161,7 @@
                       color: #095a83;
                     " fill="currentColor" viewBox="0 0 448 512">
                                     <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                    <path
-                                        d="M96 224C84.72 224 74.05 226.3 64 229.9V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32S145.7 96 128 96C57.42 96 0 153.4 0 224v96c0 53.02 42.98 96 96 96s96-42.98 96-96S149 224 96 224zM352 224c-11.28 0-21.95 2.305-32 5.879V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32s-14.33-32-32-32c-70.58 0-128 57.42-128 128v96c0 53.02 42.98 96 96 96s96-42.98 96-96S405 224 352 224z" />
+                                    <path d="M96 224C84.72 224 74.05 226.3 64 229.9V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32S145.7 96 128 96C57.42 96 0 153.4 0 224v96c0 53.02 42.98 96 96 96s96-42.98 96-96S149 224 96 224zM352 224c-11.28 0-21.95 2.305-32 5.879V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32s-14.33-32-32-32c-70.58 0-128 57.42-128 128v96c0 53.02 42.98 96 96 96s96-42.98 96-96S405 224 352 224z" />
                                 </svg>
                                 Progress for me has never been a dream. It has always been a
                                 distant reality and once one milestone is achieved, there is
@@ -187,8 +185,7 @@
                       color: #095a83;
                     " fill="currentColor" viewBox="0 0 448 512">
                                     <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                    <path
-                                        d="M96 96C42.98 96 0 138.1 0 192s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192C192 138.1 149 96 96 96zM448 192c0-53.02-42.98-96-96-96s-96 42.98-96 96s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192z" />
+                                    <path d="M96 96C42.98 96 0 138.1 0 192s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192C192 138.1 149 96 96 96zM448 192c0-53.02-42.98-96-96-96s-96 42.98-96 96s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192z" />
                                 </svg>
                             </p>
                             <div style="
@@ -211,8 +208,7 @@
         </div>
     </section>
 
-    <section class="ftco-intro" style="background-image: url(assets/images/12345-01.jpg)"
-        data-stellar-background-ratio="0.5">
+    <section class="ftco-intro" style="background-image: url(assets/images/12345-01.jpg)" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -241,44 +237,39 @@
                     <h2 class="mb-4" style="color: #fda638">
                         <span style="color: #002347 !important">Our</span> Courses
                     </h2>
-                    <!-- <p>
-            Separated they live in. A small river named Duden flows by their
-            place and supplies it with the necessary regelialia. It is a
-            paradisematic country
-          </p> -->
+
                 </div>
             </div>
-            <div class="page-wrapper">
+            <div class="page-wrapper ftco-animate">
                 <div class="postslider">
                     <!-- <i class="fa fa-angle-left prev1"></i>
             <i class="fa fa-angle-right next1"></i> -->
 
-                    <div class="post-wrapper">
+                    <div class="post-wrapper ">
 
                         <?php
-            if (!empty($course))
-              foreach ($course as $rows) {
-            ?>
+                        if (!empty($course))
+                            foreach ($course as $rows) {
+                        ?>
 
-                        <div class="pricing-entry pb-4 text-center course-main">
-                            <div class="img"
-                                style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['course_photo']); ?>)">
-                            </div>
-                            <div class="px-4">
-                                <div class="course-title">
-                                    <p><?php echo $rows['course_category']; ?></p>
+                            <div class="pricing-entry pb-4 text-center course-main">
+                                <div class="img" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['course_photo']); ?>)">
                                 </div>
-                                <div class="course-subtitle">
-                                    <p><?php echo $rows['course_title']; ?></p>
+                                <div class="px-4">
+                                    <div class="course-title">
+                                        <p><?php echo $rows['course_category']; ?></p>
+                                    </div>
+                                    <div class="course-subtitle">
+                                        <p><?php echo $rows['course_title']; ?></p>
+                                    </div>
+                                    <p class="px-4-text">
+                                        <?php echo $rows['course_desc']; ?>
+                                    </p>
                                 </div>
-                                <p class="px-4-text">
-                                    <?php echo $rows['course_desc']; ?>
+                                <p class="button text-center">
+                                    <a href="#" class="btn btn-primary px-4 py-3">Take A Course</a>
                                 </p>
                             </div>
-                            <p class="button text-center">
-                                <a href="#" class="btn btn-primary px-4 py-3">Take A Course</a>
-                            </p>
-                        </div>
                         <?php } ?>
 
 
@@ -372,46 +363,45 @@
                     </p>
                 </div>
             </div>
-            <div class="page-wrapper">
+            <div class="page-wrapper ftco-animate">
                 <div class="postslider">
                     <!-- <i class="fa fa-angle-left prev1"></i>
             <i class="fa fa-angle-right next1"></i> -->
 
                     <div class="faculty-wrapper">
                         <?php
-            if (!empty($faculty))
-              foreach ($faculty as $rows) {
-            ?>
-                        <div class="staff">
-                            <div class="img-wrap d-flex align-items-stretch">
-                                <div class="img align-self-stretch"
-                                    style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['faculty_profile']); ?>)">
+                        if (!empty($faculty))
+                            foreach ($faculty as $rows) {
+                        ?>
+                            <div class="staff">
+                                <div class="img-wrap d-flex align-items-stretch">
+                                    <div class="img align-self-stretch" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['faculty_profile']); ?>)">
+                                    </div>
+                                </div>
+                                <div class="text pt-3 text-center">
+                                    <h3><?php echo $rows['faculty_name']; ?></h3>
+                                    <span class="position mb-2"><?php echo $rows['faculty_cat']; ?></span>
+                                    <div class="faded">
+                                        <p>
+                                            <?php echo $rows['faculty_desc']; ?>
+                                        </p>
+                                        <ul class="ftco-social text-center">
+                                            <li class="ftco-animate">
+                                                <a href="#"><span class="icon-twitter"></span></a>
+                                            </li>
+                                            <li class="ftco-animate">
+                                                <a href="#"><span class="icon-facebook"></span></a>
+                                            </li>
+                                            <li class="ftco-animate">
+                                                <a href="#"><span class="icon-google-plus"></span></a>
+                                            </li>
+                                            <li class="ftco-animate">
+                                                <a href="#"><span class="icon-instagram"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="text pt-3 text-center">
-                                <h3><?php echo $rows['faculty_name']; ?></h3>
-                                <span class="position mb-2"><?php echo $rows['faculty_cat']; ?></span>
-                                <div class="faded">
-                                    <p>
-                                        <?php echo $rows['faculty_desc']; ?>
-                                    </p>
-                                    <ul class="ftco-social text-center">
-                                        <li class="ftco-animate">
-                                            <a href="#"><span class="icon-twitter"></span></a>
-                                        </li>
-                                        <li class="ftco-animate">
-                                            <a href="#"><span class="icon-facebook"></span></a>
-                                        </li>
-                                        <li class="ftco-animate">
-                                            <a href="#"><span class="icon-google-plus"></span></a>
-                                        </li>
-                                        <li class="ftco-animate">
-                                            <a href="#"><span class="icon-instagram"></span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
                         <?php } ?>
 
@@ -426,18 +416,9 @@
 
     <section class="ftco-section testimony-section bg-dark">
         <div class="container">
-            <!-- <div class="row justify-content-center mb-5 pb-2">
-        <div class="col-md-8 text-center heading-section ftco-animate">
-          <h2 class="mb-4"><span style="color:#002347">What Students</span> Says About Us</h2>
-          <p>
-            Separated they live in. A small river named Duden flows by their
-            place and supplies it with the necessary regelialia. It is a
-            paradisematic country
-          </p>
-        </div>
-      </div> -->
+
             <div class="row">
-                <div class="col-md-4 ftco-animate ">
+                <div class="col-md-4 ftco-animate video-div">
                     <p class="video-text">Listen</p>
                     <p class="video-text">from our </p>
                     <p class="video-text">future</p>
@@ -445,21 +426,35 @@
                     <p class="video-text">Engineers</p>
 
                 </div>
-                <div class="col-md-8 ftco-animate">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                <div class="col-md-8 ftco-animate ">
+                    <iframe width="100%" height="100%" class="iframe-div" src="https://www.youtube.com/embed/tgbNymZ7vqY">
                     </iframe>
                 </div>
             </div>
         </div>
     </section>
     <style>
-    .video-text {
-        margin: 0px;
-        font-size: 70px;
-        color: white;
-        font-weight: bolder;
-        line-height: 90px;
-    }
+        .video-text {
+            margin: 0px;
+            font-size: 70px;
+            color: white;
+            font-weight: bolder;
+            line-height: 90px;
+        }
+        @media (max-width: 500.98px) {
+        .video-text{
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .video-div{
+            margin-bottom: 30px;
+        }
+        .iframe-div{
+            height:280px
+        }
+      }
+
     </style>
 
 
@@ -481,26 +476,25 @@
                 <div class="col-md-12">
                     <div class="carousel-testimony owl-carousel">
                         <?php
-            if (!empty($testimonial))
-              foreach ($testimonial as $rows) {
-            ?>
-                        <div class="item">
-                            <div class="testimony-wrap d-flex">
-                                <div class="user-img mr-4"
-                                    style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['photo']); ?>)">
-                                </div>
-                                <div class="text ml-2 bg-light">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                    <p>
-                                        <?php echo $rows['testimonial']; ?>
-                                    </p>
-                                    <p class="name"><?php echo $rows['name']; ?></p>
-                                    <span class="position"><?php echo $rows['relation']; ?></span>
+                        if (!empty($testimonial))
+                            foreach ($testimonial as $rows) {
+                        ?>
+                            <div class="item">
+                                <div class="testimony-wrap d-flex">
+                                    <div class="user-img mr-4" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['photo']); ?>)">
+                                    </div>
+                                    <div class="text ml-2 bg-light">
+                                        <span class="quote d-flex align-items-center justify-content-center">
+                                            <i class="icon-quote-left"></i>
+                                        </span>
+                                        <p>
+                                            <?php echo $rows['testimonial']; ?>
+                                        </p>
+                                        <p class="name"><?php echo $rows['name']; ?></p>
+                                        <span class="position"><?php echo $rows['relation']; ?></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         <?php } ?>
 
 
@@ -510,8 +504,7 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/bg_5.jpg)"
-        data-stellar-background-ratio="0.5">
+    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/bg_5.jpg)" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-md-6 py-5 px-md-5 bg-primary">
@@ -555,8 +548,7 @@
                         </div>
                         <div class="d-md-flex">
                             <div class="form-group">
-                                <textarea name="" id="" cols="30" rows="2" class="form-control"
-                                    placeholder="Message"></textarea>
+                                <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
                             </div>
                             <div class="form-group ml-md-4">
                                 <input type="submit" value="Request A Quote" class="btn btn-secondary py-3 px-4" />
@@ -579,7 +571,7 @@
 
                 </div>
             </div>
-            <div class="page-wrapper">
+            <div class="page-wrapper ftco-animate">
                 <div class="postslider">
                     <div class="partners">
                         <div class="partners-div">
@@ -627,32 +619,28 @@
         <div class="container-wrap">
             <div class="row no-gutters">
                 <div class="col-md-3 ftco-animate">
-                    <a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center"
-                        style="background-image: url(images/course-1.jpg)">
+                    <a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/course-1.jpg)">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <span class="icon-instagram"></span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-3 ftco-animate">
-                    <a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center"
-                        style="background-image: url(images/image_2.jpg)">
+                    <a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_2.jpg)">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <span class="icon-instagram"></span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-3 ftco-animate">
-                    <a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center"
-                        style="background-image: url(images/image_3.jpg)">
+                    <a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_3.jpg)">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <span class="icon-instagram"></span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-3 ftco-animate">
-                    <a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center"
-                        style="background-image: url(images/image_4.jpg)">
+                    <a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_4.jpg)">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <span class="icon-instagram"></span>
                         </div>
@@ -664,35 +652,34 @@
 
 
     <style>
-    .partners-div {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-    }
+        .partners-div {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
 
-    .partners-div img {
-        object-fit: contain;
-    }
+        .partners-div img {
+            object-fit: contain;
+        }
     </style>
 
-   
-<?php include 'footer.php'; ?>
-  
 
- 
+    <?php include 'footer.php'; ?>
 
 
+
+
+    <div id="loading"></div>
 
 
     <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
+    <!-- <div id="ftco-loader" class="show fullscreen">
         <svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#F96D00" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
         </svg>
-    </div>
+    </div> -->
     <!-- Floating Buttons -->
 
     <button data-toggle="modal" data-target="#myModal" type="button" class="enq-button">Enquiry</button>
@@ -704,16 +691,13 @@
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-cont">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-
                     <img src="assets/images/5146766.jpg" style="width: 100%;
     height: auto;
     max-width: 100%;" />
-                    <button type="button" class="close" style="position:absolute;top:-1px;right:2px"
-                        data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" style="position:absolute;top:-1px;right:2px;outline:none" data-dismiss="modal">&times;</button>
 
                 </div>
                 <div style="padding:0 16px ;">
@@ -726,21 +710,18 @@
 
 
 
-                <form method="post" name="myemailform" id="myemailform" action="form-to-email.php" role="form"
-                    target="_blank">
+                <form method="post" name="myemailform" id="myemailform" action="form-to-email.php" role="form" target="_blank">
                     <div class="modaldiv">
                         <div class='input-label'>
                             Name:</div> <input type="text" name="name" class="modalinput" required>
                     </div>
                     <div class="modaldiv">
                         <div class='input-label'>
-                            Mobile:</div> <input type="number" name="mobile" class="modalinput" pattern="[6789][0-9]{9}"
-                            title="Please enter valid phone number" required>
+                            Mobile:</div> <input type="number" name="mobile" class="modalinput" pattern="[6789][0-9]{9}" title="Please enter valid phone number" required>
                     </div>
                     <div class="modaldiv">
                         <div class='input-label'>
-                            Email:</div> <input type="email" name="email" class="modalinput"
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                            Email:</div> <input type="email" name="email" class="modalinput" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 
                     </div>
                     <div class="modaldiv">
@@ -766,175 +747,17 @@
 
                     </div>
                 </form>
-                <!-- <div style="display: flex; flex-direction:column;margin-top: 10px;justify-content: center;align-items: center;">
-          <p style="font-size: 10px!important; margin-top: 0px; margin-bottom: 0px;line-height: 15px;font-weight: 500;color: #767676;">Contact Us 9137061453</p>
-          <p style="font-size: 10px!important; margin-top: 0px; margin-bottom: 0px;line-height: 15px;font-weight: 500;color: #767676;"> phasoracademy@gmail.com</p>
-        </div> -->
+
                 <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+
                 </div>
             </div>
 
         </div>
     </div>
-    <style>
-    .enq-button {
-
-
-        border: none;
-        position: fixed;
-        background: #002347;
-        color: #ffffff;
-        top: 50%;
-        right: 41px;
-        z-index: 1000;
-        transform: rotate(-90deg);
-        transform-origin: top right;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 20px;
-        font-size: 18px;
-        cursor: pointer;
-    }
-
-    .float-social {
-        border: none;
-        position: fixed;
-        background: green;
-        color: white;
-        top: 80%;
-        right: 38px;
-        z-index: 1000;
-        transform: rotate(-90deg);
-        transform-origin: top right;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 10px;
-        font-size: 18px;
-
-    }
-
-    .wp {
-        font-size: 28px;
-        color: white;
-    }
-
-    .enq-button:focus {
-        outline: none !important;
-
-    }
-
-    .input-label {
-        color: #4a4949;
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-    .modal-cont {
-        display: flex;
-        align-items: center;
-        min-height: calc(100% - 0rem);
-    }
-
-    .submit-button {
-        width: 80%;
-        background-color: #07528d;
-        color: white;
-        border: none;
-        height: 34px;
-        cursor: pointer;
-
-
-    }
 
 
 
-    .submit-loader {
-        width: 80%;
-        background-color: #07528d;
-        color: white;
-        border: none;
-        height: 34px;
-        cursor: pointer;
-
-        justify-content: center;
-        align-items: center;
-        display: none;
-
-    }
-
-    .getin-text {
-        font-size: 15 !important;
-        font-weight: 600;
-        margin-top: 0 !important;
-        padding-bottom: 0;
-        margin-bottom: 0px;
-    }
-
-    .mod {
-        display: flex;
-        flex-direction: row;
-        max-width: 400px !important;
-    }
-
-    .modalselect {
-        width: 200px;
-        margin: 0;
-        border: 1px solid #767676;
-        min-height: 33.13px;
-
-
-    }
-
-    .modal {
-        /* background-color: rgba(0, 0, 0, 0.3) */
-    }
-
-    .modheader {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-    }
-
-    .modaldiv {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 16px;
-    }
-
-    .modalinput {
-
-        width: 200px;
-        font-size: 12px;
-        height: 33.13px;
-    }
-
-    @media (min-width: 576px) {
-        .modal-dialog {
-            max-width: 400px !important;
-            margin: 1.75rem auto;
-        }
-
-        @media (max-width: 576px) {
-            .modal-dialog {
-                max-width: 300px !important;
-                margin: 1.75rem auto;
-            }
-        }
-    }
-    </style>
-    <script>
-    $(window).load(function() {
-        $('#myModal').modal('show');
-        alert(1)
-    });
-    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -953,118 +776,132 @@
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
     <script>
-    $(document).ready(function() {
-        $(".post-wrapper").slick({
-            dots: true,
-            infinite: true,
-            speed: 200,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true,
-                    },
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    },
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    },
-                },
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ],
-        });
+        jQuery(window).load(function() {
+            jQuery('#myModal').modal('show');
+            jQuery('#loading').fadeOut(3000);
 
-        $(".partners").slick({
-            dots: false,
-            infinite: true,
-            speed: 200,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1000,
-            responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true,
-                    },
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    },
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    },
-                },
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ],
         });
+        $(window).on('load', function() {
+            $('.preloader').fadeOut();
+            $('#preloader').delay(550).fadeOut('slow');
+            $('body').delay(450).css({
+                'overflow': 'visible'
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".post-wrapper").slick({
+                dots: true,
+                infinite: true,
+                speed: 200,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true,
+                        },
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ],
+            });
 
-        $(".faculty-wrapper").slick({
-            dots: true,
-            infinite: true,
-            speed: 200,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true,
+            $(".partners").slick({
+                dots: false,
+                infinite: true,
+                speed: 200,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true,
+                        },
                     },
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        },
                     },
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
                     },
-                },
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ],
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ],
+            });
+
+            $(".faculty-wrapper").slick({
+                dots: true,
+                infinite: true,
+                speed: 200,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true,
+                        },
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ],
+            });
         });
-    });
     </script>
 </body>
 

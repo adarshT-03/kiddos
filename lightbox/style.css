@@ -3,26 +3,27 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.3s;
     /* overflow: hidden; */
-    box-shadow: 0 8px 26px 0 rgb(0 0 0 / 16%) !important;
+  
 }
 
 /* .gallery_product{
     margin: 0 5px 5px 5px;
 } */
 .gallery_product{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 /* .glightbox img{
     box-shadow: 0 8px 26px 0 rgb(0 0 0 / 16%) !important;
 } */
 
-/* 
+
 .glightbox img:hover{
     transform: scale(1.2);
-    overflow: hidden;
+  
     
-} */
+} 
 .gallery-title
 {
     font-size: 36px;
@@ -72,7 +73,9 @@
 
 .gallery_product
 {
-    margin-bottom: 30px;
+    /* margin: 10px; */
+    padding:10px !important;
+    padding-bottom: 30px;
 	-webkit-animation-duration: 1s;
             animation-duration: 1s;
             -webkit-animation-fill-mode: both;
@@ -126,10 +129,12 @@
     .gnext{
         font-size: 30px ;
         padding: 30px;
+        top:46% !important;
     }
     .gprev{
         font-size: 30px ;
         padding: 30px;
+        top:46% !important;
 
     }
     .gclose{

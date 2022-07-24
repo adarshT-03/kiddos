@@ -846,3 +846,12 @@ font-size: 25px;
     background: #000;
   }
 }
+
+@media (max-width: 500.98px) {
+  .owl-carousel.home-slider{
+    height:300px !important
+  }
+  .owl-carousel.home-slider .slider-item{
+    height: 300px;
+  }
+}
