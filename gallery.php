@@ -43,15 +43,15 @@
 
 <body>
   <?php include 'header.php'; ?>
-  <?php include 'get.php'; ?>
+  <?php include './get_data/result_data.php'; ?>
 
   <section class="hero-wrap hero-wrap-2" style="background-image: url('assets/images/College-students.jpg');background-position: 57% 30%;">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-center justify-content-center">
         <div class="col-md-9 ftco-animate text-center">
-          <h1 class="mb-2 bread">Result</h1>
-          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Result <i class="ion-ios-arrow-forward"></i></span></p>
+          <h1 class="mb-2 bread">Gallery</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Gallery <i class="ion-ios-arrow-forward"></i></span></p>
         </div>
       </div>
     </div>
@@ -61,18 +61,19 @@
   <div class="container">
     <div class="row" style="margin-bottom: 30px;">
 
-     
+
 
 
       <?php
       if (!empty($result))
         foreach ($result as $rows) {
       ?>
-        <a href="./image/<?php echo $rows['file_name']; ?>" class="glightbox gallery_product  col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
-          <img src="./image/<?php echo $rows['file_name']; ?>" class="modal-image">
+        <a href="./image/<?php echo $rows['file_name']; ?>" class="glightbox gallery_product ftco-animate col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+          <img loading="lazy" src="./image/<?php echo $rows['file_name']; ?>" class="modal-image">
         </a>
 
       <?php } ?>
+
 
 
 

@@ -43,7 +43,7 @@
 
 <body>
   <?php include 'header.php'; ?>
-  <?php include 'get.php'; ?>
+  <?php include './get_data/result_data.php'; ?>
 
   <section class="hero-wrap hero-wrap-2" style="background-image: url('assets/images/College-students.jpg');background-position: 57% 30%;">
     <div class="overlay"></div>

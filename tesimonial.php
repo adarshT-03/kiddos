@@ -43,7 +43,7 @@
 
 <body>
   <?php include 'header.php'; ?>
-  <?php include 'get.php'; ?>
+  <?php include './get_data/testimonial_data.php'; ?>
 
   <!-- <section class="hero-wrap hero-wrap-2" style="background-image: url('assets/images/College-students.jpg');background-position: 57% 30%;">
     <div class="overlay"></div>
@@ -58,65 +58,65 @@
   </section> -->
 
   <section class="ftco-section testimony-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-2">
-                <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4"><span style="color:#002347">What Students</span> Says About Us</h2>
-                    <p>
-                        Separated they live in. A small river named Duden flows by their
-                        place and supplies it with the necessary regelialia. It is a
-                        paradisematic country
-                    </p>
-                </div>
-            </div>
-            <div class="row ftco-animate justify-content-center">
-                <div class="col-md-12">
-                    <div class="carousel-testimony owl-carousel">
-                        <?php
-                        if (!empty($testimonial))
-                            foreach ($testimonial as $rows) {
-                        ?>
-                            <div class="item">
-                                <div class="testimony-wrap d-flex">
-                                    <div class="user-img mr-4" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['photo']); ?>)">
-                                    </div>
-                                    <div class="text ml-2 bg-light">
-                                        <span class="quote d-flex align-items-center justify-content-center">
-                                            <i class="icon-quote-left"></i>
-                                        </span>
-                                        <p>
-                                            <?php echo $rows['testimonial']; ?>
-                                        </p>
-                                        <p class="name"><?php echo $rows['name']; ?></p>
-                                        <span class="position"><?php echo $rows['relation']; ?></span>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } ?>
-
-
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-2">
+        <div class="col-md-8 text-center heading-section ftco-animate">
+          <h2 class="mb-4"><span style="color:#002347">What Students</span> Says About Us</h2>
+          <p>
+            Separated they live in. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia. It is a
+            paradisematic country
+          </p>
         </div>
-    </section>
+      </div>
+      <div class="row ftco-animate justify-content-center">
+        <div class="col-md-12">
+          <div class="carousel-testimony owl-carousel">
+            <?php
+            if (!empty($testimonial))
+              foreach ($testimonial as $rows) {
+            ?>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(data:image/jpg;charset=utf8;base64,<?php echo base64_encode($rows['photo']); ?>)">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>
+                      <?php echo $rows['testimonial']; ?>
+                    </p>
+                    <p class="name"><?php echo $rows['name']; ?></p>
+                    <span class="position"><?php echo $rows['relation']; ?></span>
+                  </div>
+                </div>
+              </div>
+            <?php } ?>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <div class="container">
     <div class="row" style="margin-bottom: 30px;">
 
-    <?php
+      <?php
       if (!empty($result))
         foreach ($result as $rows) {
       ?>
-        <a href="./image/<?php echo $rows['file_name']; ?>" class="glightbox gallery_product  col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
-          <img src="./image/<?php echo $rows['file_name']; ?>" class="modal-image">
+        <a href="./image/<?php echo $rows['file_name']; ?>" class="glightbox gallery_product ftco-animate col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+          <img loading="lazy" src="./image/<?php echo $rows['file_name']; ?>" class="modal-image">
         </a>
 
       <?php } ?>
 
 
-    
+
 
 
 

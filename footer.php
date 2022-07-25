@@ -35,6 +35,7 @@
 </head>
 
 <body>
+    <?php include './get_data/footer_data.php'; ?>
     <footer class="ftco-footer ftco-bg-dark ftco-section" style="background-color: #002347 !important;">
         <div class="container">
             <div class="row mb-5">
@@ -48,40 +49,40 @@
                         <div class="block-23 mb-3">
                             <ul>
                                 <li>
-                                    <span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain
+                                    <span class="icon icon-map-marker"></span><span id="Add" class="text">203 Fake St. Mountain
                                         View, San Francisco, California,
                                         USA</span>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929
+                                    <a href="#"><span class="icon icon-phone"></span><span id="mobile" class="text">+2 392 3929
                                             210</span></a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a>
+                                    <a href="#"><span class="icon icon-envelope"></span><span id="email" class="text">phasoracademy@gmail.com</span></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-5 ftco-animate">
                         <h2 class="ftco-heading-2">Our Branches</h2>
                         <ul class="list-unstyled">
-                            <li>
-                                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Kandivali</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Malad</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Andheri</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Thakur Complex</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>NL College</a>
-                            </li>
+                            <?php
+                            if (!empty($branch))
+                                foreach ($branch as $rows) {
+                                    $branchName = "'" . $rows['branch_name'] . "'";
+                                    $branchMobile = "'" . $rows['branch_mobile'] . "'";
+                                    $branchAddress = "'" . $rows['branch_address'] . "'";
+                            ?>
+                                <li>
+                                    <a href="javascript:changeAddress(<?php echo $branchMobile; ?>,<?php echo $branchAddress; ?>)"><span class="ion-ios-arrow-round-forward mr-2"></span><?php echo $rows['branch_name']; ?></a>
+                                </li>
+
+                            <?php } ?>
+
+
                         </ul>
 
                     </div>
@@ -104,7 +105,7 @@
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                             <div class="ftco-animate">
                                 <div style="margin-bottom: 15px;">
-                                    <a href="#" class="footer-anchor"><span class="icon-phone footer-icon"></span>
+                                    <a class="footer-anchor"><span class="icon-phone footer-icon"></span>
                                         <p class=" footer-text">+91702168402</p>
 
                                     </a>
@@ -153,5 +154,13 @@
         </div>
     </footer>
 </body>
+<script>
+    function changeAddress(mobile, address) {
+
+        document.getElementById("Add").innerHTML = address;
+        document.getElementById("mobile").innerHTML = mobile;
+        
+    }
+</script>
 
 </html>

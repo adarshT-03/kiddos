@@ -32,7 +32,7 @@
 
 <body>
   <?php include 'header.php'; ?>
-  <?php include 'get.php'; ?>
+  <?php include './get_data/footer_data.php'; ?>
 
   <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');">
     <div class="overlay"></div>
@@ -64,8 +64,8 @@
       ?>
         <div>
 
-          <div class="text-center">
-            <button class="btn btn-default filter-button" id="all" onclick="myFunction(<?php echo $branchMobile; ?>,<?php echo $branchAddress; ?>)"><?php echo $rows['branch_name']; ?></button>
+          <div class="text-center ftco-animate">
+            <button class="btn btn-default filter-button" id="all" onclick="changeAddress(<?php echo $branchMobile; ?>,<?php echo $branchAddress; ?>)"><?php echo $rows['branch_name']; ?></button>
           </div>
         </div>
       <?php } ?>
@@ -78,16 +78,16 @@
 
 
   <script>
-    function myFunction(mobile, address) {
+    function changeAddress(mobile, address) {
 
       document.getElementById("Add").innerHTML = address;
       document.getElementById("mobile").innerHTML = mobile;
-      document.getElementById("email").innerHTML = address;
+
     }
   </script>
 
 
-  <section class="ftco-section contact-section" style="padding-top: 20px !important;">
+  <section class="ftco-section ftco-animate contact-section" style="padding-top: 20px !important;">
     <div class="container">
       <div class="row d-flex mb-5 contact-info">
         <div class="col-md-4 d-flex">
@@ -113,7 +113,7 @@
     </div>
   </section>
 
-  <section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+  <section class="ftco-section ftco-animate ftco-no-pt ftco-no-pb contact-section">
     <div class="container">
       <div class="row d-flex align-items-stretch no-gutters">
         <div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
@@ -135,10 +135,9 @@
             </div>
           </form>
         </div>
-        <div class="col-md-6 d-flex align-items-stretch">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7537.351118574367!2d72.858558!3d19.165674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x645bd9a5789f9a86!2sPhasor%20academy!5e0!3m2!1sen!2sin!4v1658495030639!5m2!1sen!2sin" width="100%" height="100%"
-             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+        <div class="col-md-6 ftco-animate d-flex align-items-stretch">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7537.351118574367!2d72.858558!3d19.165674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x645bd9a5789f9a86!2sPhasor%20academy!5e0!3m2!1sen!2sin!4v1658495030639!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
           <!-- <div id="map"></div> -->
         </div>
       </div>

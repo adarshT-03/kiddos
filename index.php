@@ -35,22 +35,7 @@
         }
     </style>
 
-    <!-- <style>
-        @media (max-width: 500px) {
 
-            .mu-top-email .fa-envelope,
-            .ma-em {
-                font-size: 10px;
-
-            }
-
-            .email-div {
-                padding-right: 0px !important;
-            }
-
-
-        }
-    </style> -->
 </head>
 
 <body>
@@ -441,20 +426,22 @@
             font-weight: bolder;
             line-height: 90px;
         }
-        @media (max-width: 500.98px) {
-        .video-text{
-            font-size: 40px;
-            line-height: 50px;
-            text-align: center;
-        }
-        .video-div{
-            margin-bottom: 30px;
-        }
-        .iframe-div{
-            height:280px
-        }
-      }
 
+        @media (max-width: 500.98px) {
+            .video-text {
+                font-size: 40px;
+                line-height: 50px;
+                text-align: center;
+            }
+
+            .video-div {
+                margin-bottom: 30px;
+            }
+
+            .iframe-div {
+                height: 280px
+            }
+        }
     </style>
 
 
